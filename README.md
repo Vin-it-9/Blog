@@ -54,18 +54,6 @@ To download the repository, visit the GitHub Repository, click on the Code butto
 
 
 
-Here’s a structured guide for opening and setting up your Spring Boot project in IntelliJ IDEA, similar to the format you provided:
-
----
-
-Here’s a revised version of the instructions for setting up your Spring Boot project in IntelliJ IDEA with the additional details about installing the Spring Boot Runner plugin:
-
----
-
-Here’s an improved version of the instructions, detailing how to set up and configure your Spring Boot project in IntelliJ IDEA EPA, including all necessary steps for running the application:
-
----
-
 ### 2. Open the Project in IntelliJ IDEA EPA
 
 To work with the Spring Boot project in IntelliJ IDEA EPA, follow these steps:
