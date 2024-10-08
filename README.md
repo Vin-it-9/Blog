@@ -36,7 +36,7 @@ This platform prioritizes user security and experience, making it easy for admin
 
 Before getting started, ensure you have the following installed on your machine:
 
-- **Java 17 **: Required to run the application.
+- **Java 17**: Required to run the application.
 - **Maven 3.8.1 or higher**: Used for building and managing dependencies.
 - **MySQL 8.0 or higher**: The database for storing and querying supplier data.
 - **IntelliJ IDEA or VS Code**: Recommended IDEs for running and debugging the project.
