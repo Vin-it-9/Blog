@@ -126,8 +126,6 @@ To work with the Spring Boot project in Visual Studio Code, follow these steps:
 5. **Open the Project**:
    - Open the cloned project in VS Code by selecting **File > Open Folder...** and navigating to the cloned project directory.
 
-Here’s the updated section for configuring the application, incorporating your specifications about changing the database username, password, email, and keys:
-
 ---
 
 6. **Configure the Application**:
