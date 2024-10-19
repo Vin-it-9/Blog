@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{base::layout(~{::section})}" >
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Admin Profile</title>
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+<section class="flex flex-col items-center justify-center p-6 text-center">
+	<h1 class="text-3xl font-bold text-blue-600 mb-4">ADMIN Profile Page</h1>
+
+	<h4 class="text-lg text-gray-700 mb-2">Name: [[${user.name}]]</h4>
+	<h4 class="text-lg text-gray-700 mb-2">Email: [[${user.email}]]</h4>
+	<h4 class="text-lg text-gray-700 mb-2">Mob No: [[${user.mobileNo}]]</h4>
+	<h4 class="text-lg text-gray-700 mb-4">Role: [[${user.role}]]</h4>
+
+	<a href="/logout" class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">Logout</a>
+</section>
+</body>
+</html>

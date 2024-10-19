@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>View Blog</title>
+</head>
+<body>
+<h1 th:text="${blog.title}">Blog Title</h1>
+
+<p th:text="${blog.content}">Blog Content</p>
+
+<div th:if="${blog.image != null}">
+    <img th:src="@{/blogs/displayImage/{id}(id=${blog.id})}" alt="Blog Image" style="max-width: 600px;">
+</div>
+
+<a href="/blogs/list">Back to Blog List</a>
+</body>
+</html>

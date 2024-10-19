@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<Nexus>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.Nexus.Application",
+            "projectName": "Nexus",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
