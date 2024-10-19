@@ -48,7 +48,7 @@ Before getting started, ensure you have the following installed on your machine:
 Start by cloning the project repository to your local machine:
 
 ```bash
-git clone https://github.com/Vin-it-9/BookMyShow.git
+git clone https://github.com/Vin-it-9/Blog.git
 ```
 To download the repository, visit the GitHub Repository, click on the Code button, and select Download ZIP.
 
