@@ -9,7 +9,6 @@ This project is a full-stack blogging website developed using Java and modern we
 - **Admin Panel**:
   - View a complete list of registered users.
   - Remove or block users from the platform.
-  - Manage posts: Add, delete, or edit blog posts, including title, content, and images.
   - Oversee user activities and posts, ensuring smooth content management.
 
 - **User Panel**:
