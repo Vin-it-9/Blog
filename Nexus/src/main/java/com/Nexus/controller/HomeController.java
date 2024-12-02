@@ -10,6 +10,7 @@ import java.util.List;
 import com.Nexus.entity.*;
 import com.Nexus.service.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.repository.query.Param;
@@ -141,23 +142,43 @@ public class HomeController {
 		return "login";
 	}
 
+	// @PostMapping("/saveUser")
+	// public String saveUser(@ModelAttribute User user, HttpSession session, Model m, HttpServletRequest request) {
+
+	// 	String url = request.getRequestURL().toString();
+
+	// 	url = url.replace(request.getServletPath(), "");
+
+	// 	User savedUser = userService.saveUser(user, url);
+
+	// 	if (savedUser == null) {
+	// 		session.setAttribute("msg", "Email already exists. Please use a different email or login.");
+	// 		return "redirect:/register";
+	// 	}
+	// 	session.setAttribute("msg", "Registered successfully! Please check your email to verify your account.");
+	// 	return "redirect:/signin";
+	// }
+
+	@Value("${site.url}")
+	private String siteUrl;
+
 	@PostMapping("/saveUser")
-	public String saveUser(@ModelAttribute User user, HttpSession session, Model m, HttpServletRequest request) {
+	public String saveUser(@ModelAttribute User user, HttpSession session) {
 
-		String url = request.getRequestURL().toString();
+		// Use the configured site URL
+		String url = siteUrl;
 
-		url = url.replace(request.getServletPath(), "");
-
+		user.setRole("ROLE_USER");
 		User savedUser = userService.saveUser(user, url);
 
 		if (savedUser == null) {
 			session.setAttribute("msg", "Email already exists. Please use a different email or login.");
 			return "redirect:/register";
 		}
+
 		session.setAttribute("msg", "Registered successfully! Please check your email to verify your account.");
 		return "redirect:/signin";
 	}
-
 
 	@GetMapping("/verify")
 	public String verifyAccount(@Param("code") String code, Model m) {
