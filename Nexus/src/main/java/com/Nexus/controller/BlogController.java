@@ -90,7 +90,7 @@ public class BlogController {
     @GetMapping("/list")
     public String listAllBlogs(Model model) {
         List<Blog> blogs = blogService.getAllBlogs();
-        Collections.reverse(blogs);
+        // Collections.reverse(blogs);
         List<BlogDTO> blogDTOs = new ArrayList<>();
         for (Blog blog : blogs) {
             List<CommentDTO> comments = commentService.getCommentsByBlogId(blog.getId());
