@@ -17,7 +17,7 @@ public interface BlogRepository extends JpaRepository<Blog, Long> {
 
         Blog findByTitle(String title);
 
-        @Query("SELECT b FROM Blog b ORDER BY b.createdAt DESC")
+        // @Query("SELECT b FROM Blog b ORDER BY b.createdAt DESC")
         List<Blog> findAllByOrderByCreatedAtDesc();
 
         List<Blog> findByAuthorEmail(String email);
